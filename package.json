@@ -1,0 +1,31 @@
+{
+  "name": "fund-analyser",
+  "version": "0.0.1",
+  "description": "website to track funds",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envyN/fund-analyser.git"
+  },
+  "author": "nvn.adarsh88@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/envyN/fund-analyser/issues"
+  },
+  "homepage": "https://github.com/envyN/fund-analyser",
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-concat": "^2.6.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "bower": "^1.7.9",
+    "run-sequence": "^1.2.2",
+    "jshint": "^2.9.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-sass": "^2.3.2"
+  }
+}
