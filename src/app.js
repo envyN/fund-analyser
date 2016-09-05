@@ -5,3 +5,7 @@ var app = {
     __version: '0.0.1',
     name: 'fund-analyser'
 };
+function helloworld(){
+	var naveen=25;
+	console.log(naveen);
+}

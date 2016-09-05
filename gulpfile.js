@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     srcDir = './src',
     destDir = './dist';
 gulp.task('clean', function () {
-    del(destDir);
+    return del(destDir);
 });
 gulp.task('html', function () {
     return gulp.src(srcDir + '/**/*.html')
@@ -36,7 +36,7 @@ gulp.task('js', function () {
         .pipe(connect.reload());
 });
 gulp.task('js:watch', function () {
-    gulp.watch(srcDir + '/**/*.js', ['lint', 'js']);
+    return gulp.watch(srcDir + '/**/*.js', ['lint', 'js']);
 });
 gulp.task('sass', function () {
     return gulp.src(srcDir + '/styles/**/*.scss')
@@ -48,7 +48,7 @@ gulp.task('sass:watch', function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 gulp.task('watch', ['html:watch', 'js:watch', 'sass:watch']);
-gulp.task('serve', function () {
+gulp.task('serve', ['watch'], function () {
     connect.server({
         root: 'dist',
         host: 'localhost',
